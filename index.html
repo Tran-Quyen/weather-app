@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App | Quyen Dang</title>
+    <link rel="shortcut icon" href="./assets/img/Q-icon.png" type="image/png" />
+
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- css -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="weather">
+        <div class="weather-main">
+          <div class="weather-main__search">
+            <form action="" class="weather-main__form">
+              <input
+                type="text"
+                class="weather-main__input"
+                placeholder="Nhập tên thành phố"
+                value="Ha Noi"
+              />
+              <span class="weater-main__icon-search">
+                <i class="fas fa-search"></i>
+              </span>
+              <label class="weather-main__message">city not found</label>
+            </form>
+          </div>
+
+          <div class="weather-main__status">
+            <img
+              src="https://openweathermap.org/img/wn/03d@2x.png"
+              alt="image weather status"
+              class="weather-main__status-img"
+            />
+          </div>
+
+          <div class="weather-main__description">
+            <span class="weather-main__temperature"> -- </span>
+            <div class="weather-main__info">
+              <span class="weather-main__name"> -- </span>
+              <span class="weather-main__city"> -- </span>
+              <span class="weather-main__country"> , -- </span>
+            </div>
+            <div class="weather-main__date">
+              <span class="weather-main__month"> -- </span>
+              <span class="weather-main__day"> -- </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="weather-more">
+          <div class="row weather-more__list">
+            <div class="col weather-more__item">
+              <div class="weather-more__sunrise">
+                <label for="" class="weather-more__title"> Mặt trời mọc </label>
+
+                <span class="weather-more__desc"> -- </span>
+              </div>
+            </div>
+            <div class="col weather-more__item">
+              <div class="weather-more__sunset">
+                <label for="" class="weather-more__title"> Mặt trời lặn </label>
+
+                <span class="weather-more__desc"> -- </span>
+              </div>
+            </div>
+            <div class="col weather-more__item">
+              <div class="weather-more__humidity">
+                <label for="" class="weather-more__title"> Độ ẩm </label>
+
+                <span class="weather-more__desc"> --% </span>
+              </div>
+            </div>
+            <div class="col weather-more__item">
+              <div class="weather-more__wind">
+                <label for="" class="weather-more__title"> Tốc độ gió </label>
+
+                <span class="weather-more__desc"> -- Km/h </span>
+              </div>
+            </div>
+            <div class="col weather-more__item">
+              <div class="weather-more__temp-min">
+                <label for="" class="weather-more__title"> Nhiệt độ thấp nhất </label>
+
+                <span class="weather-more__desc"> --&deg; </span>
+              </div>
+            </div>
+            <div class="col weather-more__item">
+              <div class="weather-more__temp-max">
+                <label for="" class="weather-more__title"> Nhiệt độ cao nhất </label>
+
+                <span class="weather-more__desc"> --&deg; </span>
+              </div>
+            </div>
+            <div class="col weather-more__item">
+              <div class="weather-more__feels-like">
+                <label for="" class="weather-more__title"> Nhiệt độ thích hợp </label>
+
+                <span class="weather-more__desc"> --&deg; </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="weather-more__navigation">
+            <!-- <span class="weather-more__nav-item active"></span>
+					<span class="weather-more__nav-item"></span> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="copyright">
+      <i class="fas fa-code copyright-icon copyright-icon--coding"></i> with by
+      <i class="fas fa-heart copyright-icon"></i>. Copyright by
+      <a href="https://www.facebook.com/QuyenGiaSuJava" class="copyright-author">Quyen Dang</a>
+      &copy; 2021
+    </footer>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
